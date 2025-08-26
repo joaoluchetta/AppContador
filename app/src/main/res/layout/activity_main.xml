@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#1976D2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textColor="@color/black"
+        android:textSize="80sp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="96dp"
+        android:layout_height="70dp"
+        android:text="@string/plus"
+        android:textSize="40sp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#07C40D"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textContador"
+        app:layout_constraintStart_toStartOf="@+id/btnMinus"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#FF0000"
+        app:strokeWidth="2dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="#FF0000"
+        app:layout_constraintTop_toBottomOf="@+id/textContador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlus"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
